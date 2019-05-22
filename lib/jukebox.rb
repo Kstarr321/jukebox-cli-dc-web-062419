@@ -33,8 +33,25 @@ array.each_with_index do |elmt, idx|
   end 
 end
   
+
+
+def play(array)
+count = array.size
+
+puts "Please enter a song name or number:"
+input = gets.chomp
+
+if input.size == 1 
+  num = input.to_i 
+  num 
+elsif input.size > 1
+  input
+     
+
+   
   
-  
+  end
+end
   
   
   
