@@ -37,29 +37,23 @@ end
 
 def play(array)
 count = array.size
-
 puts "Please enter a song name or number:"
 input = gets.chomp
 count = array.size
-
-
-
 if input.to_i.between?(1,9) == false 
   puts "Invalid input, please try again"
 end
-
-
   array.each_with_index do |song, idx|
     if song == input
       puts "Playing #{song}" 
     elsif input.to_i == idx+1 
       puts "Playing #{song}" 
-
-
-
-    
     end 
   end
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
   
   
