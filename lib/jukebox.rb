@@ -56,13 +56,25 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
-  help 
-  puts "Please enter a command:"
-  user_input = gets.strip 
-  
-  
-end 
+def run(arr)
+help 
+puts "Please enter a command:"
+user_input = gets.chomp
+
+if user_input == "help"
+  help   
+elsif user_input == "list"
+  list(arr)
+elsif user_input == "play"
+  play(arr)
+elsif user_input == "exit"
+  exit_jukebox
+else 
+  run(arr)
+end
+
+    
+end
   
   
   
